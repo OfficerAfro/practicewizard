@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        .genspace {
+
+        .genspace2 {
+            display: inline-block;
             margin: 18px;
             padding: 18px;
-            display: inline-block;
         }
         .mark{
-            color:red;
+            color:purple;
         }
         .input1{
             width: 100%;
@@ -21,60 +22,133 @@
             width:35%;
             display: inline-block;
         }
-        .spac3{
-            margin:8px;
+        .isslist {
+            display: inline-block;
+            padding: 18px;
+            margin-top: 13px;
+            margin: 18px;
+            height: 650px;
+            width: 100%;
+        }
+        .navbottom {
+            float: left;
+            overflow: hidden;
+            background-color: #333;
+            bottom: 0;
+            width: 100%;
+
+        }
+        .navbottom a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbottom a:hover {
+            background: red;
+            color: lavenderblush;
+        }
+
+        .navbottom a.active {
+            background-color: rgb(76, 175, 158);
+            color: white;
+        }
+        .navbottom a.active:hover{
+            background-color: royalblue;
+            color: white;
+        }
+        .navtop{
+            width: 100%;
+        }
+        .navtop ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-size: 17px;
+        }
+
+        .navtop li {
+        float: left;
+        }
+
+        .navtop li:last-child {
+        border-right: none;
+        }
+
+        .navtop li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        .navtop li a:hover{
+        background-color: #333;
+        }
+        .navtop li a:hover{
+            background: blue;
+            color: lavenderblush;
+        }
+
+        .navtop a.active {
+        background-color:  rgb(76, 111, 175);
         }
 
     </style>
     <title>Intial</title>
 </head>
 <body>
-    <div class="genspace">
-        <table>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link spac3" href="#">Summary</a>
-                    <a class="nav-item nav-link active spac3" href="#">Initial <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link spac3" href="#">Background</a>
-                    <a class="nav-item nav-link spac3" href="#">Proposed Investment</a>
-                    <a class="nav-item nav-link spac3" href="#">Confirmation</a>
-                    <a class="nav-item nav-link spac3" href="#">Funding Info</a>
-                    <a class="nav-item nav-link spac3" href="#">Corrdination</a>
+    
+        <h1 class="genspace2">Issue to Decision Tool</h1>
+            <nav class="navtop" style="background-color: rgb(76, 175, 158);">
+                  <div class="">
+                    <ul>
+                        <li><a class="" href="./Summarypage.html">Summary</a></li>
+                        <li><a class="active " href="./Initialpage.html">Initial <span class="sr-only">(current)</span></a></li>
+                        <li><a class="" href="./backgroundpage.html">Background</a></li>
+                        <li><a class="" href="./ProposedInvestmentpage.html">Proposed Investment</a></li>
+                        <li><a class="" href="./Confirmationpage.html">Confirmation</a></li>
+                        <li><a class="" href="./Fundinginfopage.html">Funding Info</a></li>
+                        <li><a class="" href="./Coordinationpage.html">Corodination</a></li>
+                    </ul>
                   </div>
-                </div>
               </nav>
-          
-        </table>
-        </div>
+
     <form>
-        <p>Issue Classification<mark>*</mark></p>
-      <select class="custom-select">
-        <option selected>Classification</option>
-        <option value="TOP">Top</option>
-        <option value="SEC">Secret</option>
-        <option value="UNC">Unclassified</option>
-        <option value="FOV">Official Use Only</option>
-      </select>
-      <p>Title of Proposed Issue<mark>*</mark></p>
-      <input class="input1" type="text" placeholder="Enter Title">
-      <p>Strategic Outcome<mark>*</mark></p>
-      <input class="input1" type="text" placeholder="Enter Outcome">
-      <p>Programatic Action</p>
-      <input class="input1" type="text" placeholder="Enter Action Program">
-      <p>Issue Scope<mark>*</mark></p>
-      <input class="input1" type="text" placeholder="Enter Scope">
-      <p>Submitting Organization<mark>*</mark></p>
-      <input class="input1" type="text" placeholder="Enter Organization">
-      <p>Submitting Organization POC<mark>*</mark></p>
-      <input class="input2" type="text" placeholder="Enter Organization POC">
-      <button style="background-color:blue;color:white;">ME</button>
-      <p>Submitting Organization POC Secure Phone<mark>*</mark></p>
-      <input class="input2" type="number" placeholder="Enter POC Secure Phone#">
-      <button style="background-color:Gray;color:white;">Cancel</button> <button style="background-color:blue;color:white;">Next</button>
+        <div class="isslist genspace2">
+                <p>Issue Classification<b style="color: purple;">*</b></p>
+            <select class="custom-select">
+                <option selected>Classification</option>
+                <option value="TOP">Top</option>
+                <option value="SEC">Secret</option>
+                <option value="UNC">Unclassified</option>
+                <option value="FOV">Official Use Only</option>
+            </select>
+            <p>Title of Proposed Issue<b style="color: purple;">*</b></p>
+            <input class="input1" type="text" placeholder="Enter Title">
+            <p>Strategic Outcome<b style="color: purple;">*</b></p>
+            <input class="input1" type="text" placeholder="Enter Outcome">
+            <p>Programatic Action</p>
+            <input class="input1" type="text" placeholder="Enter Action Program">
+            <p>Issue Scope<b style="color: purple;">*</b></p>
+            <input class="input1" type="text" placeholder="Enter Scope">
+            <p>Submitting Organization<b style="color: purple;">*</b></p>
+            <input class="input1" type="text" placeholder="Enter Organization">
+            <p>Submitting Organization POC<b style="color: purple;">*</b></p>
+            <input class="input2" type="text" placeholder="Enter Organization POC">
+            <button style="background-color:blue;color:white;">Autofill</button>
+            <p>Submitting Organization POC Secure Phone<b style="color: purple;">*</b></p>
+            <input class="input2" type="number" placeholder="Enter POC Secure Phone#">
+            
+       </div>
+       <nav class="navbottom"><a href="./Summarypage.html">Cancel</a><a href="./backgroundpage.html" class="active">Next</a></nav>
     </form>
     
 </body>
