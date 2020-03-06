@@ -121,7 +121,7 @@
                   </div>
               </nav>
 
-    <form>
+    <form (submit)=()>
         <div class="isslist genspace2">
                 <p>Issue Classification<b style="color: purple;">*</b></p>
             <select class="custom-select">
@@ -132,23 +132,23 @@
                 <option value="FOV">Official Use Only</option>
             </select>
             <p>Title of Proposed Issue<b style="color: purple;">*</b></p>
-            <input class="input1" type="text" placeholder="Enter Title">
+            <input [(ngModel)]= "" class="input1" type="text" placeholder="Enter Title">
             <p>Strategic Outcome<b style="color: purple;">*</b></p>
-            <input class="input1" type="text" placeholder="Enter Outcome">
+            <input [(ngModel)]= "" class="input1" type="text" placeholder="Enter Outcome">
             <p>Programatic Action</p>
-            <input class="input1" type="text" placeholder="Enter Action Program">
+            <input [(ngModel)]= ""class="input1" type="text" placeholder="Enter Action Program">
             <p>Issue Scope<b style="color: purple;">*</b></p>
-            <input class="input1" type="text" placeholder="Enter Scope">
+            <input [(ngModel)]= ""class="input1" type="text" placeholder="Enter Scope">
             <p>Submitting Organization<b style="color: purple;">*</b></p>
-            <input class="input1" type="text" placeholder="Enter Organization">
+            <input [(ngModel)]= ""class="input1" type="text" placeholder="Enter Organization">
             <p>Submitting Organization POC<b style="color: purple;">*</b></p>
-            <input class="input2" type="text" placeholder="Enter Organization POC">
+            <input [(ngModel)]= ""class="input2" type="text" placeholder="Enter Organization POC">
             <button style="background-color:blue;color:white;">Autofill</button>
             <p>Submitting Organization POC Secure Phone<b style="color: purple;">*</b></p>
-            <input class="input2" type="number" placeholder="Enter POC Secure Phone#">
+            <input [(ngModel)]= ""class="input2" type="number" placeholder="Enter POC Secure Phone#">
             
        </div>
-       <nav class="navbottom"><a href="./Summarypage.html">Cancel</a><a href="./backgroundpage.html" class="active">Next</a></nav>
+       <nav class="navbottom"><a href="./Summarypage.html">Cancel</a><a type="submit" href="./backgroundpage.html" class="active">Next</a></nav>
     </form>
     
 </body>

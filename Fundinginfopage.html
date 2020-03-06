@@ -101,32 +101,34 @@
             </ul>
           </div>
       </nav>
+      <form (submit)="">
         <h3>Funding Information (Dollars in Thousands)</h3>
         <h5>Funding Scenario</h5>
-        <select name="" id="">
+        <select [(ngModel)]="" name="" id="">
             <option value="">Funding Baseline</option>
         </select>
         <h5>Line Item Type</h5>
-        <select name="" id="">
+        <select [(ngModel)]="" name="" id="">
             <option value="">$1000000</option>
         </select>
         <h5>Program Name</h5>
-        <select name="" id="">
+        <select [(ngModel)]="" name="" id="">
             <option value="">Select Program</option>
         </select>
         <h5>Base Year</h5>
         <h6>(Actual Year Here)</h6>
         <ul>
-            <li>(Actual Year+1) <input type="text" name="" id=""></li> 
-            <li>(Actual Year+2) <input type="text" name="" id=""></li>
-            <li>(Actual Year+3) <input type="text" name="" id=""></li>
-            <li>(Actual Year+4) <input type="text" name="" id=""></li>
-            <li>(Actual Year+5) <input type="text" name="" id=""></li>
+            <li>(Actual Year+1) <input [(ngModel)]="" type="number" name="" id=""></li> 
+            <li>(Actual Year+2) <input [(ngModel)]="" type="number" name="" id=""></li>
+            <li>(Actual Year+3) <input [(ngModel)]="" type="number" name="" id=""></li>
+            <li>(Actual Year+4) <input [(ngModel)]="" type="number" name="" id=""></li>
+            <li>(Actual Year+5) <input [(ngModel)]="" type="number" name="" id=""></li>
         </ul>
         <h5>Justification</h5>
-        <input type="text" name="" id="">
-        <input type="text" name="" id="" placeholder="Program Funding Distribution(dollars in thousands)">
-        <input type="text" name="" id="" placeholder="Total(dollars in thousands">
-        <nav class="navbottom"><a href="./Summarypage.html">Cancel</a><a href="./Coordinationpage.html" class="active">Next</a></nav>
+        <input [(ngModel)]="" type="text" name="" id="">
+        <input [(ngModel)]="" type="text" name="" id="" placeholder="Program Funding Distribution(dollars in thousands)">
+        <input [(ngModel)]="" type="text" name="" id="" placeholder="Total(dollars in thousands)">
+    </form>
+        <nav class="navbottom"><a href="./Summarypage.html">Cancel</a><a href="./Coordinationpage.html" type="submit"class="active">Next</a></nav>
 </body>
 </html>

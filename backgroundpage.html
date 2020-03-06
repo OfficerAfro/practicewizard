@@ -101,14 +101,16 @@
             </ul>
           </div>
       </nav>
-      <div style="display: inline;">
+      <form (submit)="">
+    <div style="display: inline;">
       <h5>Title of Proposed Issue(from session)</h5>
       <h3>Title (from Summary Page)</h3>
       <h5>Summarize the issue</h5>
-      <textarea name="" id="" width="606" height="206" placeholder="Enter Summary of the Issue"></textarea>
+      <textarea [(ngModel)]="" name="" id="" width="606" height="206" placeholder="Enter Summary of the Issue"></textarea>
       <h5>Provide a Detailed Background</h5>
-      <textarea name="" id="" width="606" height="206" placeholder="Enter Detailed Background of the Issue"></textarea>
-      <nav class="navbottom"><a href="./Summarypage.html">Cancel</a><a href="./ProposedInvestmentpage.html" class="active">Next</a></nav>
+      <textarea [(ngModel)]="" name="" id="" width="606" height="206" placeholder="Enter Detailed Background of the Issue"></textarea>
+      <nav class="navbottom"><a href="./Summarypage.html">Cancel</a><a href="./ProposedInvestmentpage.html" class="active" type="submit">Next</a></nav>
     </div>
+      </form>
 </body>
 </html>
